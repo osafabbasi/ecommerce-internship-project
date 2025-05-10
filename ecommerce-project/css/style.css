@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(247, 250, 252, 1);
+    overflow-x: hidden;
+}
+
+/* below is the code for the navbar */
+nav {
+    background-color: rgba(255, 255, 255, 1);
+    height: 12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid  rgba(176, 184, 194, 0.2);;
+}
+
+.logo {
+    margin-left: 3%;
+}
+
+/* search bar code starts from here */
+
+.search-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Prevent line break */
+    width: 50%;
+
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex: 1 1 auto;
+    /* Flexible and shrinkable */
+    min-width: 80px;
+    padding: 9px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border: 2px solid rgba(13, 110, 253, 0.9);
+}
+
+.search-bar select {
+    flex: 0 0 auto;
+    width: 20%;
+    border: 2px solid rgba(13, 110, 253, 0.7);
+    border-left: none;
+}
+
+.search-bar button {
+    flex: 0 0 auto;
+    width: 20%;
+    border: 2px solid rgba(13, 110, 253, 0.7);
+    border-left: none;
+    background-color: rgba(13, 110, 253, 1);
+    color: white;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+/* below is the code for options in navbar */
+.options-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Prevent line break */
+    width: 20%;
+    height: 75%;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.opt {
+    height: 90%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: #fff; */
+}
+
+.options-menu .opt i {
+    /* opacity: ; */
+    font-size: clamp(1.2rem, 2vw, 1rem);
+    color: rgba(139, 150, 165, 1);
+}
+
+.opt p {
+    color: rgba(139, 150, 165, 1);
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem); 
+     white-space: nowrap;
+}
+/* the navbar code ends here */
+/* the second navbar code starts here */
+.sec-nav{
+    margin-top: 0.7%;
+    height: 10%;
+    width: 100%;
+    border: 2px solid  rgba(176, 184, 194, 0.2);
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-evenly;
+}
+.left-side{
+    height: 100%;
+    width: 50%;
+    background-color: red;
+}
+.right-side{
+    height: 100%;
+    width: 30%;
+    background-color: rgb(238, 255, 0);
+}
