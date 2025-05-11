@@ -18,7 +18,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-bottom: 2px solid  rgba(176, 184, 194, 0.2);;
+    border-bottom: 2px solid rgba(176, 184, 194, 0.2);
+    ;
 }
 
 .logo {
@@ -53,6 +54,8 @@ nav {
     width: 20%;
     border: 2px solid rgba(13, 110, 253, 0.7);
     border-left: none;
+        font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+
 }
 
 .search-bar button {
@@ -65,17 +68,20 @@ nav {
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 }
+.search-bar button:active{
+        background-color: rgb(27, 102, 214);
+
+}
 
 /* below is the code for options in navbar */
 .options-menu {
     display: flex;
     flex-wrap: nowrap;
-    /* Prevent line break */
     width: 20%;
     height: 75%;
     justify-content: space-between;
     align-items: center;
-    /* background-color: green; */
+    cursor: pointer;
 }
 
 .opt {
@@ -85,7 +91,6 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* background-color: #fff; */
 }
 
 .options-menu .opt i {
@@ -94,32 +99,52 @@ nav {
     color: rgba(139, 150, 165, 1);
 }
 
-.opt p {
+.opt p,
+.opt-nav2 {
     color: rgba(139, 150, 165, 1);
     font-family: "Barlow", sans-serif;
     font-weight: 500;
     font-style: normal;
-  font-size: clamp(0.8rem, 1.5vw, 0.9rem); 
-     white-space: nowrap;
+    font-size: clamp(0.5rem, 1.5vw, 0.9rem);
+    white-space: nowrap;
 }
+
 /* the navbar code ends here */
 /* the second navbar code starts here */
-.sec-nav{
+.sec-nav {
     margin-top: 0.7%;
     height: 10%;
     width: 100%;
-    border: 2px solid  rgba(176, 184, 194, 0.2);
+    border: 2px solid rgba(176, 184, 194, 0.2);
     background-color: rgba(255, 255, 255, 1);
     display: flex;
     justify-content: space-evenly;
 }
-.left-side{
+
+.left-side {
     height: 100%;
     width: 50%;
-    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
 }
-.right-side{
+
+ .opt-nav2 {
+    height: 100%;
+    width: 15%;
+    font-size: clamp(0.5rem, 1.5vw, 0.9rem);
+    letter-spacing: 0.5px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+} 
+
+
+.right-side {
     height: 100%;
     width: 30%;
     background-color: rgb(238, 255, 0);
 }
+
