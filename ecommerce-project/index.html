@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/ecommerce-project/css/style.css">
     <!-- font awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-<!-- cdn for font -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<!-- cdn of remix icon -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- cdn for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- cdn of remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -24,7 +28,7 @@
         </div>
         <div class="search-bar"> <!-- for search-bar-->
             <input type="text" placeholder="Search"> <!-- the text input of search-bar-->
-            <select name="categories" id="categories"> <!-- the select tag is forthe dropdown-->
+            <select name="category" id="category"> <!-- the select tag is forthe dropdown-->
                 <option value="men">All Category</option>
                 <option value="women">Women</option>
                 <option value="kids">Kids</option>
@@ -34,25 +38,144 @@
             <button>Search</button>
         </div>
         <div class="options-menu">
-            <div class="opt"><i class="fa fa-user"></i><p>Profile</p></div>
-            <div class="opt"><i class="ri-message-2-line"></i><p>Message</p></div>
-            <div class="opt"><i class="ri-heart-fill"></i><p>Orders</p></div>
-            <div class="opt"><i class="ri-shopping-cart-2-fill"></i><p>My Cart</p></div>
+            <div class="opt"><i class="fa fa-user"></i>
+                <p>Profile</p>
+            </div>
+            <div class="opt"><i class="ri-message-2-line"></i>
+                <p>Message</p>
+            </div>
+            <div class="opt"><i class="ri-heart-fill"></i>
+                <p>Orders</p>
+            </div>
+            <div class="opt"><i class="ri-shopping-cart-2-fill"></i>
+                <p>My Cart</p>
+            </div>
         </div>
     </nav>
-<!-- second nav bar -->
- <section class="sec-nav">
-      <div class="left-side">
-        <div class="opt-nav2"><i class="ri-align-justify"></i><p>All Category</p></div>
-        <div class="opt-nav2"><p>Hot Offers</p></div>
-        <div class="opt-nav2"><p>Gift Boxes</p></div>
-        <div class="opt-nav2"><p>Projects</p></div>
-        <div class="opt-nav2"><p>Menu Item</p></div>
-        <div class="opt-nav2"><p>Help</p><i class="ri-arrow-down-s-line"></i></div>
-      </div>
-      <div class="right-side"></div>
- </section>
+    <!-- second nav bar -->
+    <section class="sec-nav">
+        <div class="left-side">
+            <div class="opt-nav2"><i class="ri-align-justify"></i>
+                <p>All Category</p>
+            </div>
+            <div class="opt-nav2">
+                <p>Hot Offers</p>
+            </div>
+            <div class="opt-nav2">
+                <p>Gift Boxes</p>
+            </div>
+            <div class="opt-nav2">
+                <p>Projects</p>
+            </div>
+            <div class="opt-nav2">
+                <p>Menu Item</p>
+            </div>
+            <div class="opt-nav2">
+                <p>Help</p><i class="ri-arrow-down-s-line"></i>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="country">
+                <p>English,USD</p><i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="country">
+                <p>Ship to</p><img src="/ecommerce-project/assets/image/flags/germany.png" alt="germany"><i
+                    class="ri-arrow-down-s-line"></i>
+            </div>
+        </div>
+    </section>
+    <!-- first box -->
+    <section class="section-main">
 
+        <div class="menu" id="menu1">
+            <div class="categories" style="background-color: rgba(229, 241, 255, 1);">
+                <p style="font-weight: 500;">Automobiles</p>
+            </div>
+            <div class="categories">
+                <p>Clothes and Wear</p>
+            </div>
+            <div class="categories">
+                <p>Home interiors</p>
+            </div>
+            <div class="categories">
+                <p>Computer and Tech</p>
+            </div>
+            <div class="categories">
+                <p>Tools,equipments</p>
+            </div>
+            <div class="categories">
+                <p>Sports and Outdoor</p>
+            </div>
+            <div class="categories">
+                <p>Animal and Pets</p>
+            </div>
+            <div class="categories">
+                <p>Machinery tools</p>
+            </div>
+            <div class="categories">
+                <p>More category</p>
+            </div>
+        </div>
+
+        <div class="menu" id="banner"> <!--the middle picture part-->
+            <div class="text-box">
+                <div class="text-container">
+                    <p>Latest trending</p>
+                    <p class="text2"> Electronic items</p>
+                    <button>Learn more</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu" id="log-in-section">
+            <div class="log-in-boxes">
+                <img src="/ecommerce-project/assets/image/Avatar.png" alt="avatar">
+                <p>Hi,User <br> lets get started</p>
+                <button class="join-now">Join Now</button>
+                <button class="log-in">Log in</button>
+            </div>
+            <div class="log-in-boxes">
+                <p>Get US $10 off with a new supplier</p>
+            </div>
+            <div class="log-in-boxes">
+                <p>Send quotes with supplier preferences</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-sale">
+        <div class="sale-section-boxes"> <!--this is the box which contians that date-->
+          <h3>Deals and offers</h3>
+          <h2>Hygiene Equipments</h2>
+          <div class="counter">
+            <div class="counter-boxes"><p>04 <span>Days</span></p></div>
+            <div class="counter-boxes"><p>13 <span>Hours</span></p></div>
+            <div class="counter-boxes"><p>34 <span>Min</span></p></div>
+            <div class="counter-boxes"><p>56 <span>Sec</span></p></div>
+          </div>
+        </div>
+        <div class="sale-section-boxes">
+            <img src="/ecommerce-project/assets/image/8.jpg" alt="images of products">
+            <p>Smart Watches</p>
+            <div class="price-discount"><p>-25%</p></div>
+        </div>
+        <div class="sale-section-boxes"><img src="/ecommerce-project/assets/image/7.jpg" alt="images of products">
+            <p style="margin-left: 36%;">Laptops</p>
+            <div class="price-discount"><p>-15%</p></div>
+        </div>
+        <div class="sale-section-boxes"><img src="/ecommerce-project/assets/image/6.jpg" alt="images of products">
+            <p>GoPro cameras</p>
+            <div class="price-discount"><p>-40%</p></div>
+        </div>
+        <div class="sale-section-boxes"><img src="/ecommerce-project/assets/image/5.jpg" alt="images of products">
+            <p style="margin-left: 30%;">Headphones</p>
+            <div class="price-discount"><p>-25%</p></div>
+        </div>
+        <div class="sale-section-boxes"><img src="/ecommerce-project/assets/image/3.jpg" alt="images of products">
+            <p style="margin-left: 24%;">Canon cameras</p>
+            <div class="price-discount"><p>-25%</p></div>
+        </div>
+        <!-- these uper boxes are the products shown in sale section -->
+    </section>
     <script src="/ecommerce-project/js/script.js"></script>
 </body>
 
