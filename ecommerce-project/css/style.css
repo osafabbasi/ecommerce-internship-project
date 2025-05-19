@@ -196,7 +196,7 @@ nav {
     width: 18%;
 }
 
-.categories{
+.categories {
     height: 10%;
     width: 95%;
     margin-bottom: 1%;
@@ -207,188 +207,218 @@ nav {
     padding-left: 5%;
     cursor: pointer;
 }
-.categories p{
-    font-size: clamp(0.5rem, 1.5vw, 0.9rem); 
+
+.categories p {
+    font-size: clamp(0.5rem, 1.5vw, 0.9rem);
     font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
 /* main image part */
 #banner {
     width: 40%;
     overflow: hidden;
 }
-#banner{
-     background-image: url('/ecommerce-project/assets/image/main11.png');
-  background-size: cover;        /* makes image cover the entire div */
-  background-position:center;   /* centers the image */
-  height: 90%;
-  width: 60%;
+
+#banner {
+    background-image: url('/ecommerce-project/assets/image/main11.png');
+    background-size: cover;
+    /* makes image cover the entire div */
+    background-position: center;
+    /* centers the image */
+    height: 90%;
+    width: 60%;
 }
-.text-box{
+
+.text-box {
     height: 60%;
     width: 50%;
     /* background-color: blue; */
-    transform: translate(10%,24%);
-    
-    
+    transform: translate(10%, 24%);
+
+
 }
-.text-container p{
-     font-size: 2rem; 
+
+.text-container p {
+    font-size: 2rem;
     font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-style: normal;
 
 }
-.text-container .text2{
-      font-size: 2.3rem; 
+
+.text-container .text2 {
+    font-size: 2.3rem;
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-style: normal;
     margin-bottom: 5%;
 }
-.text-container button{
-padding: 10px 20px;
-border-radius: 5px;
-border: none;
-background-color: rgba(255, 255, 255, 1);
-font-size: 0.9rem;
-font-family: "Barlow", sans-serif;
+
+.text-container button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 0.9rem;
+    font-family: "Barlow", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
+
 /* third part of the main part */
 
-.log-in-boxes{
+.log-in-boxes {
     background-color: blue;
     height: 25.7%;
     margin-top: 5%;
     border: none;
     border-radius: 5px;
     flex-wrap: wrap;
+    overflow: hidden;
+
 
 }
-.log-in-boxes:nth-child(1){
+
+.log-in-boxes:nth-child(1) {
     height: 43%;
     background-color: rgba(227, 240, 255, 1);
     margin-top: 0%;
 }
-.log-in-boxes:nth-child(1) img{
+
+.log-in-boxes:nth-child(1) img {
     margin-top: 5%;
     margin-left: 5%;
 }
-.log-in-boxes:nth-child(1) p{
+
+.log-in-boxes:nth-child(1) p {
     margin-top: -20%;
     margin-left: 30%;
     font-size: 1.2vw;
     font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-style: normal;
-    
+
 }
-.join-now{
+
+.join-now {
     margin-top: 6%;
     margin-left: 5%;
     width: 90%;
     height: 25%;
-    padding:5%;
-   border: none;
-   border-radius: 5px;
-   background: linear-gradient(rgba(18, 127, 255, 1),rgba(0, 103, 255, 1));
-   color: white;
+    padding: 5%;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(rgba(18, 127, 255, 1), rgba(0, 103, 255, 1));
+    color: white;
 }
-.log-in{
+
+.log-in {
     margin-top: 3%;
     margin-left: 5%;
-     width: 90%;
-    padding:5%;
+    width: 90%;
+    padding: 5%;
     height: 25%;
     border: 1px solid rgba(222, 226, 231, 1);
-   border-radius: 5px;
-   background-color: rgba(255, 255, 255, 1);
-   color: rgba(13, 110, 253, 1);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(13, 110, 253, 1);
 }
-.log-in-boxes:nth-child(2){
+
+.log-in-boxes:nth-child(2) {
     background-color: rgba(243, 131, 50, 1);
 }
-.log-in-boxes:nth-child(2) p{
+
+.log-in-boxes:nth-child(2) p {
     padding-left: 20px;
     padding-right: 80px;
     padding-top: 20px;
-     font-size: 1.2vw;
+    font-size: 1.2vw;
     font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white;
 }
-.log-in-boxes:nth-child(3){
+
+.log-in-boxes:nth-child(3) {
     background-color: rgba(85, 189, 195, 1);
 }
-.log-in-boxes:nth-child(3) p{
-     padding-left: 20px;
+
+.log-in-boxes:nth-child(3) p {
+    padding-left: 20px;
     padding-right: 50px;
     padding-top: 20px;
-     font-size: 1.2vw;
+    font-size: 1.2vw;
     font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white;
 }
+
 /* main-section css code ends here */
 
 /* sale section code starts ehre */
-.section-sale{
+.section-sale {
     height: 38%;
     width: 86%;
     border: 1px solid rgba(222, 226, 231, 1);
-    transform: translate(7.9%, 18%);
+    transform: translate(7.9%, 14%);
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 1);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     overflow: hidden;
+
 }
-.sale-section-boxes{
+
+.sale-section-boxes {
     height: 100%;
     width: 16.5%;
     border-right: 1px solid rgba(222, 226, 231, 1);
 }
-.sale-section-boxes:nth-child(1){
-     height: 100%;
+
+.sale-section-boxes:nth-child(1) {
+    height: 100%;
     width: 25%;
 }
-.sale-section-boxes img{
+
+.sale-section-boxes img {
     width: 80%;
     margin-left: 12%;
     margin-top: 8%;
 }
-.sale-section-boxes p{
+
+.sale-section-boxes p {
     font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-style: normal;
-     font-size: 1.1vw; 
-     letter-spacing: -0.2px;
-     margin-left: 26%;
-     margin-bottom: 4%;
+    font-size: 1.1vw;
+    letter-spacing: -0.2px;
+    margin-left: 26%;
+    margin-bottom: 4%;
 }
-.price-discount{
+
+.price-discount {
     height: 10%;
     width: 30%;
     border: none;
     border-radius: 20px;
     background-color: rgba(255, 227, 227, 1);
-     margin-left: 35%;
-     display: flex;
-     align-items: center;
+    margin-left: 35%;
+    display: flex;
+    align-items: center;
 }
-.price-discount p{
+
+.price-discount p {
     font-size: 0.9vw;
     color: rgba(235, 0, 27, 1);
     font-weight: 500;
     letter-spacing: -0.2px;
 }
-.sale-section-boxes h3{
+
+.sale-section-boxes h3 {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -396,15 +426,17 @@ font-family: "Barlow", sans-serif;
     margin-top: 7%;
     margin-left: 10%;
 }
-.sale-section-boxes h2{
+
+.sale-section-boxes h2 {
     font-size: 1vw;
     color: rgba(139, 150, 165, 1);
-      font-family: "Barlow", sans-serif;
+    font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin-left: 10%;
 }
-.counter{
+
+.counter {
     height: 40%;
     margin-left: 7%;
     margin-top: 5%;
@@ -413,7 +445,8 @@ font-family: "Barlow", sans-serif;
     display: flex;
     justify-content: space-evenly;
 }
-.counter-boxes{
+
+.counter-boxes {
     height: 45%;
     width: 22%;
     background-color: rgba(96, 96, 96, 1);
@@ -421,21 +454,442 @@ font-family: "Barlow", sans-serif;
     border-radius: 5px;
 
 }
-.counter-boxes p{
-      text-align: center;
-   color: rgba(255, 255, 255, 1);
-      font-family: "Barlow", sans-serif;
+
+.counter-boxes p {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Barlow", sans-serif;
     font-weight: 500;
     font-style: normal;
     margin-left: 3%;
     padding: 2%;
 }
 
-.counter-boxes span{
+.counter-boxes span {
     font-weight: 400;
     font-size: 0.8vw;
 }
-.counter-boxes:nth-child(3) p,.counter-boxes:nth-child(4) p{
+
+.counter-boxes:nth-child(3) p,
+.counter-boxes:nth-child(4) p {
     margin-left: 13.6%;
 }
+
 /* sale section ends here */
+/* section home and outdoor starts here */
+.section-home-and-outdoor {
+    height: 40%;
+    width: 86%;
+    border: 0.5px solid rgba(222, 226, 231, 1);
+    transform: translate(7.9%, 20%);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left-section {
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255, 232, 186, 0.4), rgba(87, 71, 41, 0.0124)),
+        url(/ecommerce-project/assets/image/image92.png);
+    /*this line adds and also applies gradient on the image*/
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25%;
+}
+
+.btn-and-text {
+    height: 60%;
+    width: 80%;
+    /* background-color: blue; */
+}
+
+.btn-and-text p {
+    font-size: 1.8vw;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding: 13% 8%;
+}
+
+.btn-and-text button {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 4% 12%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 6%;
+
+}
+
+/* left section code ends here */
+/* right section code start here */
+.right-section {
+    height: 100%;
+    /* background-color: rgb(0, 26, 255); */
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.products-home-outdoor {
+    height: 50%;
+    width: 25%;
+    border: 0.5px solid rgba(222, 226, 231, 1);
+    box-sizing: border-box;
+
+}
+
+.products-home-outdoor img {
+    width: 40%;
+    margin-left: 60%;
+    margin-top: -10%;
+}
+
+.products-home-outdoor h4 {
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: 1.4vw;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2px;
+}
+
+.products-home-outdoor p {
+    font-size: 0.9vw;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(139, 150, 165, 1);
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+/* home and outdoor section ends here */
+.electronic-items {
+    height: 40%;
+    width: 86%;
+    border: 0.5px solid rgba(222, 226, 231, 1);
+    transform: translate(7.9%, 27%);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+#left-electronic {
+    background-color: rgba(196, 196, 196, 1);
+    /* optional */
+    background-image:
+        url('/ecommerce-project/assets/image/image98.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right-electronic {
+    height: 100%;
+    /* background-color: rgb(0, 26, 255); */
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* .this section ends here */
+/* a little thing about this section is that ive used the last section classes in this section many parts to reutilize it and save line of codes and energy */
+.section-inquiry {
+    height: 60%;
+    width: 86%;
+    transform: translate(7.9%, 23%);
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(44, 124, 241, 1), rgba(0, 209, 255, 0.5)), url(/ecommerce-project/assets/image/image102.png);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-inquiry {
+    height: 85%;
+    width: 40%;
+}
+
+.text-inquiry h4 {
+    font-size: 3vw;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+}
+
+.text-inquiry p {
+    font-size: 1.3vw;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.2px;
+    margin-top: 2%;
+}
+
+.form {
+    height: 80%;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+}
+
+.form h4 {
+    font-size: 1.9vw;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgba(28, 28, 28, 1);
+}
+
+.form input {
+    margin-top: 5%;
+    height: 12%;
+    width: 90%;
+    border-radius: 9px;
+    border: 1px solid rgba(222, 226, 231, 1);
+    padding-left: 2%;
+}
+
+.form input::placeholder {
+    font-size: 1.2vw;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(28, 28, 28, 1);
+    letter-spacing: 0.4px;
+}
+
+.form textarea {
+    border-radius: 9px;
+    border: 1px solid rgba(222, 226, 231, 1);
+    height: 25%;
+    width: 90%;
+    max-height: 40%;
+    max-width: 100%;
+    margin-top: 6%;
+}
+
+.form textarea::placeholder {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.4px;
+    font-size: 1.1vw;
+    padding: 2%;
+}
+
+#quantityInput {
+    width: 27%;
+}
+
+.form button {
+    width: 26%;
+    height: 12%;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to left, rgba(0, 103, 255, 1), rgba(18, 127, 255, 1));
+    color: rgba(255, 255, 255, 1);
+    margin-top: 3%;
+}
+
+/* this section ends here */
+/* recommended products section starts here */
+.recommended-products-section {
+    height: 95%;
+    width: 86%;
+    transform: translate(7.9%, 18%);
+}
+
+.main-text {
+    height: 10%;
+    width: 100%;
+}
+
+.main-text h2 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.2px;
+    font-size: 1.8vw;
+    margin-left: 2%;
+}
+
+.products-box-recommended {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.recommended-products-box {
+
+    background-color: rgba(255, 255, 255, 1);
+
+    height: 48%;
+    width: 18%;
+    box-sizing: border-box;
+    border: 1px solid rgba(224, 224, 224, 1);
+    border-radius: 5px;
+}
+
+.recommended-products-box img {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.recommended-products-box p {
+    font-size: 1vw;
+    font-family: "inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 5%;
+}
+
+.recommended-products-box h4 {
+    font-size: 0.9vw;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5%;
+    color: rgba(139, 150, 165, 1);
+    letter-spacing: 0.5px;
+    margin-right: 25%;
+    margin-top: 2%;
+}
+
+/* this section ends here */
+.extra-services {
+    height: 50%;
+    width: 86%;
+    transform: translate(7.9%, 37%);
+}
+
+.extra-text {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.extra-text h2 {
+    font-family: "inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.2px;
+    font-size: 1.8vw;
+    margin-left: 2%;
+}
+
+.services-parent {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.services {
+    height: 69%;
+    width: 23%;
+    border: 1px solid rgba(224, 224, 224, 1);
+    border-radius: 7px;
+}
+
+.services:nth-child(1) {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(/ecommerce-project/assets/image/imageno198.png);
+    background-position: center -70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.services:nth-child(2) {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(/ecommerce-project/assets/image/imageno104.png);
+    background-position: center -70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.services:nth-child(3) {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(/ecommerce-project/assets/image/imageno106.png);
+    background-position: center -10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.services:nth-child(4) {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(/ecommerce-project/assets/image/imageno107.png);
+    background-position: center -50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.icon-area {
+    position: absolute;
+    height: 20%;
+    width: 15%;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: rgba(209, 231, 255, 1);
+    margin-left: 75%;
+    margin-top: 32%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-area-services {
+    height: 39%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 40%;
+    display: flex;
+    align-items: center;
+
+}
+.text-area-services p{
+     font-family: "inter", sans-serif;
+     font-weight: 500;
+    font-style: normal;
+    font-size: 1vw;
+    margin-left: 5%;
+    /* background-color: red; */
+    width: 60%;
+}

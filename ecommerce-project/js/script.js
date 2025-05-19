@@ -12,3 +12,204 @@ categories.forEach(elem => {        //looping on every category
          
     })
 });
+
+// below is the code for te section of home and outdoor items 
+// this secction basically adds products dynamically using dom manipulation
+const homeAndOutdoorItems = [
+  {
+    title: "Soft chairs",
+    from: "From",
+    price:"USD 19",
+    image: "assets/image/interior/1.jpg"
+  },
+  {
+    title: "Sofa & chair",
+    from: "From",
+    price:"USD 19",
+    image: "assets/image/interior/6.jpg"
+  },
+  {
+    title: "Kitchen dishes",
+    from: "From",
+    price:"USD 19",
+    image: "assets/image/interior/5.jpg"
+  },
+  {
+    title: "Smart watches",
+    from: "From",
+    price:"USD 19",
+    image: "assets/image/interior/3.jpg"
+  },
+  {
+    title: "Kitchen mixer",
+    from: "From",
+    price:"USD 10",
+    image: "assets/image/interior/9.jpg"
+  },
+  {
+    title: "Blenders",
+    from: "From",
+    price:"USD 39",
+    image: "assets/image/interior/8.jpg"
+  },
+  {
+    title: "Home appliance",
+    from: "From",
+    price:"USD 19",
+    image: "assets/image/interior/7.jpg"
+  },
+  {
+    title: "Coffee maker",
+    from: "From",
+    price:"USD 10",
+    image: "assets/image/interior/4.jpg"
+  }
+];
+
+const homeAndOutdoorDiv = document.querySelector(".right-section");
+
+homeAndOutdoorItems.forEach(item => {
+  const homeAndOutdoorBoxes = document.createElement('div');
+  homeAndOutdoorBoxes.classList.add("products-home-outdoor");
+  homeAndOutdoorBoxes.innerHTML = `
+    <div class="content">
+      <h4>${item.title}</h4>
+      <p>${item.from} <br/> ${item.price}</p>
+      <img src="${item.image}" alt="${item.title}" />
+    </div>
+  `;
+  homeAndOutdoorDiv.appendChild(homeAndOutdoorBoxes);
+});
+// this section is ofr electronic item
+const electronicItemParent = document.querySelector(".right-electronic");
+
+const ElectronicItems = [
+  {
+    title: "Smart watches",
+    from: "From",
+    price:"USD 19",
+    image: "assets/image/8.jpg"
+  },
+  {
+    title: "Cameras",
+    from: "From",
+    price:"USD 89",
+    image: "assets/image/6.jpg"
+  },
+  {
+    title: "Headphones",
+    from: "From",
+    price:"USD 10",
+    image: "assets/image/9.jpg"
+  },
+  {
+    title: "Smart watches",
+    from: "From",
+    price:"USD 90",
+    image: "assets/image/10.jpg"
+  },
+  {
+    title: "Gaming set",
+    from: "From",
+    price:"USD 35",
+    image: "assets/image/5.jpg"
+  },
+  {
+    title: "Laptops & PC",
+    from: "From",
+    price:"USD 340",
+    image: "assets/image/7.jpg"
+  },
+  {
+    title: "Smartphones",
+    from: "From",
+    price:"USD 19",
+    image: "assets/image/2.jpg"
+  },
+  {
+    title: "Electric kattle",
+    from: "From",
+    price:"USD 240",
+    image: "assets/image/1.jpg"
+  }
+];
+ElectronicItems.forEach(item => {
+   const electronicItemDiv = document.createElement("div");
+   electronicItemDiv.classList.add("products-home-outdoor");
+  electronicItemDiv.innerHTML = `
+    <div class="content">
+      <h4>${item.title}</h4>
+      <p>${item.from} <br/> ${item.price}</p>
+      <img src="${item.image}" alt="${item.title}" />
+    </div>
+  `;
+  electronicItemParent.appendChild(electronicItemDiv);
+});
+
+// this section is for the product that are below the inquiry section
+const recommendedProductsParent = document.querySelector(".products-box-recommended")
+const recommendedProducts = [
+  {
+    image: "assets/image/cloth/1.jpg",
+    price: "$10.30",
+    description: "T-shirts with multiple colors, for men"
+  },
+  {
+    image: "assets/image/cloth/3.jpg",
+    price: '$10.30',
+    description: "Jeans shorts for men blue color"
+  },
+  {
+    image: "assets/image/cloth/7.jpg",
+    price: '$12.50',
+    description: "Brown winter coat medium size"
+  },
+  {
+    image: "assets/image/cloth/6.jpg",
+    price: '$34.00',
+    description: "Jeans bag for travel for men"
+  },
+  {
+    image: "assets/image/cloth/5.jpg",
+    price: '$99.00',
+    description: "Leather wallet"
+  },
+  {
+    image: "assets/image/cloth/4.jpg",
+    price: '$9.99',
+    description: "Canon camera black, 100x zoom"
+  },
+  {
+    image: "assets/image/tech/9.jpg",
+    price: '$8.99',
+    description: "Headset for gaming with mic"
+  },
+  {
+    image: "assets/image/cloth/5.jpg",
+    price: '$10.30',
+    description: "Smartwatch silver color modern"
+  },
+  {
+    image: "assets/image/interior/3.jpg",
+    price: '$10.30',
+    description: "Blue wallet for men leather metarial"
+  },
+  {
+    image: "assets/image/tech/10.jpg",
+    price: '$80.95',
+    description: "Jeans bag for travel for men"
+  }
+];
+recommendedProducts.forEach(items => {
+  const recommendedProductsBox = document.createElement('div');
+  recommendedProductsBox.classList.add("recommended-products-box");
+
+  recommendedProductsBox.innerHTML = `
+    <div class="content">
+    <img src="${items.image}" alt="${items.name}" />
+    <p>${items.price}</p>
+      <h4>${items.description}</h4>
+    </div>
+  `;
+  recommendedProductsParent.appendChild(recommendedProductsBox)
+});

@@ -144,38 +144,140 @@
     </section>
     <section class="section-sale">
         <div class="sale-section-boxes"> <!--this is the box which contians that date-->
-          <h3>Deals and offers</h3>
-          <h2>Hygiene Equipments</h2>
-          <div class="counter">
-            <div class="counter-boxes"><p>04 <span>Days</span></p></div>
-            <div class="counter-boxes"><p>13 <span>Hours</span></p></div>
-            <div class="counter-boxes"><p>34 <span>Min</span></p></div>
-            <div class="counter-boxes"><p>56 <span>Sec</span></p></div>
-          </div>
+            <h3>Deals and offers</h3>
+            <h2>Hygiene Equipments</h2>
+            <div class="counter">
+                <div class="counter-boxes">
+                    <p>04 <span>Days</span></p>
+                </div>
+                <div class="counter-boxes">
+                    <p>13 <span>Hours</span></p>
+                </div>
+                <div class="counter-boxes">
+                    <p>34 <span>Min</span></p>
+                </div>
+                <div class="counter-boxes">
+                    <p>56 <span>Sec</span></p>
+                </div>
+            </div>
         </div>
         <div class="sale-section-boxes">
             <img src="/ecommerce-project/assets/image/8.jpg" alt="images of products">
             <p>Smart Watches</p>
-            <div class="price-discount"><p>-25%</p></div>
+            <div class="price-discount">
+                <p>-25%</p>
+            </div>
         </div>
         <div class="sale-section-boxes"><img src="/ecommerce-project/assets/image/7.jpg" alt="images of products">
             <p style="margin-left: 36%;">Laptops</p>
-            <div class="price-discount"><p>-15%</p></div>
+            <div class="price-discount">
+                <p>-15%</p>
+            </div>
         </div>
         <div class="sale-section-boxes"><img src="/ecommerce-project/assets/image/6.jpg" alt="images of products">
             <p>GoPro cameras</p>
-            <div class="price-discount"><p>-40%</p></div>
+            <div class="price-discount">
+                <p>-40%</p>
+            </div>
         </div>
         <div class="sale-section-boxes"><img src="/ecommerce-project/assets/image/5.jpg" alt="images of products">
             <p style="margin-left: 30%;">Headphones</p>
-            <div class="price-discount"><p>-25%</p></div>
+            <div class="price-discount">
+                <p>-25%</p>
+            </div>
         </div>
         <div class="sale-section-boxes"><img src="/ecommerce-project/assets/image/3.jpg" alt="images of products">
             <p style="margin-left: 24%;">Canon cameras</p>
-            <div class="price-discount"><p>-25%</p></div>
+            <div class="price-discount">
+                <p>-25%</p>
+            </div>
         </div>
         <!-- these uper boxes are the products shown in sale section -->
     </section>
+    <section class="section-home-and-outdoor">
+        <div class="left-section">
+            <div class="btn-and-text">
+                <p>Home and <br>outdoor</p>
+                <button>Source now</button>
+            </div>
+        </div>
+        <div class="right-section">
+        </div>
+
+    </section>
+    <section class="electronic-items">
+        <div class="left-section" id="left-electronic">
+            <div class="btn-and-text">
+                <p>Consumer <br>Electronic and <br>Gadgets</p>
+                <button>Source now</button>
+            </div>
+        </div>
+        <div class="right-electronic">
+
+        </div>
+    </section>
+    <section class="section-inquiry">
+        <div class="text-inquiry">
+            <h4>An easy way to send requests to all suppliers</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <div class="form">
+            <h4>Send quote to suppliers </h4>
+            <input placeholder="What item you need?">
+            <textarea name="details" id="details" placeholder="Type more details"></textarea>
+            <input type="text" placeholder="Quantity" style="width: 45%;">
+            <!-- below is code for dropdown -->
+            <input list="quantities" id="quantityInput" name="quantity" placeholder="Pcs" /> <!--the problem in this is that it doesnt contain that logo because placeholder doesnt support it and i made the one in whihc user can also enter thier own price-->
+            <datalist id="quantities">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+            </datalist>
+          <button>Send Inquiry</button>
+        </div>
+    </section>
+    <section class="recommended-products-section">
+        <div class="main-text"><h2>Recommended items</h2></div>
+        <div class="products-box-recommended">
+           
+        </div>
+    </section>
+   <section class="extra-services">
+    <div class="extra-text">
+       <h2>Our extra services</h2>
+    </div>   
+    <div class="services-parent">
+        <div class="services">
+            <div class="icon-area"><i class="ri-search-line"></i></div>
+            <div class="text-area-services">
+                <p>Source from <br>Industry Hubs</p>
+            </div>
+        </div> <!--the background would be the image setted -->
+        <div class="services">
+               <div class="icon-area"><i class="ri-archive-line"></i></div>
+            <div class="text-area-services">
+                <p>Customize Your <br>Products</p>
+        </div>
+        </div>
+        <div class="services">
+               <div class="icon-area"><i class="ri-send-plane-fill"></i></div>
+            <div class="text-area-services">
+                <p>Fast, reliable shipping <br>by ocean or air</p>
+        </div>
+        </div>
+        <div class="services">
+               <div class="icon-area"><i class="ri-shield-check-line"></i></div>
+            <div class="text-area-services">
+                <p>Product monitoring <br>and inspection</p>
+        </div>
+    </div>
+</section>
+
+
+
+
     <script src="/ecommerce-project/js/script.js"></script>
 </body>
 
