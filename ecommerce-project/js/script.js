@@ -213,3 +213,34 @@ recommendedProducts.forEach(items => {
   `;
   recommendedProductsParent.appendChild(recommendedProductsBox)
 });
+// this section ends here
+const countries = [
+  { country: "Arabic Emirates", url: "shopname.ae", image: "assets/image/flags/dubai.png" },
+  { country: "Australia", url: "shopname.ae", image: "assets/image/flags/australia.png" },
+  { country: "United States", url: "shopname.ae", image: "assets/image/flags/usa.png" },
+  { country: "Russia", url: "shopname.ru", image: "assets/image/flags/russia.png" },
+  { country: "Italy", url: "shopname.it", image: "assets/image/flags/italy.png" },
+  { country: "Denmark", url: "denmark.com.dk", image: "assets/image/flags/scotland.png" },
+  { country: "France", url: "shopname.com.fr", image: "assets/image/flags/france.png" },
+  { country: "Arabic Emirates", url: "shopname.ae", image: "assets/image/flags/dubai.png" }, // duplicate
+  { country: "China", url: "shopname.ae", image: "assets/image/flags/china.png" },
+  { country: "Great Britain", url: "shopname.co.uk", image: "assets/image/flags/england.png" }
+];
+//this is the array for the suppliers of diffeent countries i added it dynamically to update in future if needed
+const countryParent = document.querySelector(".countries-area");
+
+countries.forEach(items => {
+  const countriesBox = document.createElement('div');
+  countriesBox.classList.add("countries-box");
+
+  countriesBox.innerHTML = `
+    <div class="countries-box-content">
+      <img src="${items.image}" alt="${items.country}" class="countries-box-img" />
+      <div class="countries-box-text">
+        <h4>${items.country}</h4>
+        <p>${items.url}</p>
+      </div>
+    </div>
+  `;
+  countryParent.appendChild(countriesBox);
+});

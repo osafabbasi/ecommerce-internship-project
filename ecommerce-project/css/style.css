@@ -8,8 +8,11 @@ body {
     width: 100vw;
     background-color: rgba(247, 250, 252, 1);
     overflow-x: hidden;
+     font-family: "Inter", sans-serif;
 }
-
+button:active{
+    opacity: 0.5;
+}
 /* below is the code for the navbar */
 nav {
     background-color: rgba(255, 255, 255, 1);
@@ -893,3 +896,273 @@ nav {
     /* background-color: red; */
     width: 60%;
 }
+/* this section ends here */
+.suppliers-countries{
+     height: 30%;
+    width: 86%;
+    transform: translate(7.9%, 48%);
+}
+.countries-text{
+    height: 15%;
+    width: 100%;
+}
+.countries-text h2{
+     font-family: "inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -0.2px;
+    font-size: 1.8vw;
+    margin-left: 2%;
+}
+.countries-area{
+   height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.countries-box {
+  width: 20%;
+  box-sizing: border-box;
+  padding: 0.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countries-box-content {
+  display: flex;
+  justify-content: center;
+  gap: 0.5vw;
+}
+
+.countries-box-img {
+  width: 2vw; /* adjust as needed */
+  height: auto;
+}
+
+.countries-box-text h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1vw;
+  margin: 0;
+}
+
+.countries-box-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8vw;
+  margin: 0;
+}
+/* footer code starts here */
+footer{
+    height: 87%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+margin-top: 9%;
+}
+.newsletter-box{
+    height: 40%;
+    width: 100%;
+    background-color: rgba(239, 242, 244, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-text-area{
+    height: 80%;
+    width: 60%;
+    padding-top: 3.3%;
+}
+.newsletter-text-area h4{
+    font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5vw;
+  margin-left: 30%;
+  margin-top: 1%;
+  color: rgba(28, 28, 28, 1);
+}
+.newsletter-text-area p{
+     font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1vw;
+  margin-left: 18%;
+  margin-top: 1%;
+  color:rgba(96, 96, 96, 1);
+}
+.newsletter-form{
+    height: 30%;
+    width: 50%;
+    margin-left: 23%;
+    margin-top: 1%;
+}
+.newsletter-form input{
+    height: 55%;
+    margin-left: 5%;
+   width: 60%;
+   border: 1px solid rgba(222, 226, 231, 1);
+   border-radius: 4px;
+   padding-left: 5%;
+   margin-top: 3%;
+}
+.newsletter-form button{
+    height: 55%;
+   width: 20%;
+   background-color: blue;
+   border: none;
+   border-radius: 5px;
+   color: white;
+}
+
+
+
+/* second footer code starts here */
+
+.footer-wrapper {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-brand-section {
+  flex: 1 1 250px;
+  min-width: 240px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  width: 50%;
+}
+
+
+.footer-description {
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #777;
+}
+.footer-social-icons{
+    display: flex;
+    height: 50px;
+    width: 250px;
+    justify-content: space-evenly;
+    margin-left: -3%;
+    
+}
+.logos-footer{
+    height: 40px;
+    width: 40px;
+    background-color: rgba(189, 196, 205, 1);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links-section {
+  display: flex;
+  gap: 40px;
+  flex: 3 1 700px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  min-width: 120px;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.footer-list a:hover {
+  color: #4A7AFF;
+}
+
+.footer-app-buttons img {
+  width: 120px;
+  margin-bottom: -40px;
+  display: block;
+}
+/* last footer code starts here
+ */
+ .copyright-part{
+    height: 15%;
+    width: 100%;
+    background-color: rgba(239, 242, 244, 1);
+    border: 1px solid rgba(222, 226, 231, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .copyright-text,.copyright-language{
+    height: 70%;
+    width: 20%;
+ }
+ .copyright-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+ }
+ .copyright-text h4{
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(96, 96, 96, 1);
+ }
+ .copyright-language {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .copyright-language img{
+    width: 10%;
+ }
+ .copyright-language h4{
+      font-weight: 400;
+    font-style: normal;
+    color: rgba(96, 96, 96, 1);
+ }
