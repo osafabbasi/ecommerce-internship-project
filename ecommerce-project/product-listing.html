@@ -1,0 +1,129 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product View Toggle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .view-toggle {
+      margin-bottom: 20px;
+    }
+
+    .view-toggle button {
+      padding: 10px 15px;
+      margin-right: 10px;
+      cursor: pointer;
+      border: none;
+      background-color: #eee;
+      border-radius: 5px;
+    }
+
+    .view-toggle button.active {
+      background-color: #222;
+      color: #fff;
+    }
+
+    .product-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .product-card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #fafafa;
+      transition: all 0.3s ease;
+    }
+
+    /* GRID VIEW STYLES */
+    .grid-view .product-card {
+      width: calc(33.333% - 20px);
+    }
+
+    /* LIST VIEW STYLES */
+    .list-view .product-card {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .product-card img {
+      width: 100%;
+      max-width: 100px;
+      border-radius: 5px;
+    }
+
+    .list-view .product-card img {
+      width: 150px;
+    }
+
+    .product-info h3 {
+      margin: 0 0 10px;
+    }
+
+    .product-info p {
+      margin: 0;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="view-toggle">
+    <button class="grid active">🔳 Grid View</button>
+    <button class="list">☰ List View</button>
+  </div>
+
+  <div class="product-wrapper grid-view">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Product">
+      <div class="product-info">
+        <h3>Product 1</h3>
+        <p>$20</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Product">
+      <div class="product-info">
+        <h3>Product 2</h3>
+        <p>$25</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Product">
+      <div class="product-info">
+        <h3>Product 3</h3>
+        <p>$30</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const gridBtn = document.querySelector(".grid");
+    const listBtn = document.querySelector(".list");
+    const wrapper = document.querySelector(".product-wrapper");
+
+    gridBtn.addEventListener("click", () => {
+      wrapper.classList.add("grid-view");
+      wrapper.classList.remove("list-view");
+      gridBtn.classList.add("active");
+      listBtn.classList.remove("active");
+    });
+
+    listBtn.addEventListener("click", () => {
+      wrapper.classList.add("list-view");
+      wrapper.classList.remove("grid-view");
+      listBtn.classList.add("active");
+      gridBtn.classList.remove("active");
+    });
+  </script>
+
+</body>
+</html> -->
