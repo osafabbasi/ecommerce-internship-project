@@ -97,7 +97,7 @@
             <div class="content-top-box">
                 <h4>12,911 items in <span>Mobile accessory</span></h4>
                 <div class="right-side-content">
-                    <i class="ri-checkbox-fill"></i>
+                    <input type="checkbox">
                     <p>Verified only</p>
                     <select name="fetured" id="featured">
                         <option value="Featured">Featured</option>
@@ -105,8 +105,9 @@
                         <option value="Low-price">Low Price</option>
                         <option value="Good-quality">Good quality</option>
                     </select>
-                    <button class="grid-btn"><i class="ri-layout-grid-fill"></i></button>
-                    <button class="list-btn"><i class="ri-list-unordered"></i></button>
+                    <button class="grid-btn" onclick="styleGrid()"><i class="ri-layout-grid-fill"></i></button>
+                    <button class="list-btn" onclick="styleList()"><i class="ri-list-unordered"></i></button>
+
                 </div>
             </div>
             <div class="tag-container">
@@ -228,9 +229,26 @@
         </div>
 
 
-        <div class="products-parent">
+     <div class="products-parent">
+  <!-- Product cards will be injected here -->
+    </div>
+    <div class="grid-parent"></div>
+<div class="pages-container">
+  <select class="pages-dropdown">
+    <option>Show 10</option>
+    <option>Show 20</option>
+    <option>Show 50</option>
+  </select>
 
-        </div>
+  <div class="pages-pagination">
+    <button class="pages-btn" style="border-top-left-radius: 6px;border-bottom-left-radius: 6px">&#x276E;</button>
+    <button class="pages-btn pages-active">1</button>
+    <button class="pages-btn">2</button>
+    <button class="pages-btn">3</button>
+    <button class="pages-btn" style="border-top-right-radius: 6px;border-bottom-right-radius: 6px">&#x276F;</button>
+  </div>
+</div>
+
 
     </section>
 

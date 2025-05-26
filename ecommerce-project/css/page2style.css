@@ -9,6 +9,7 @@ body {
     background-color: rgba(247, 250, 252, 1);
     overflow-x: hidden;
      font-family: "Inter", sans-serif;
+     font-style: normal;
 }
 button:active{
     opacity: 0.5;
@@ -181,7 +182,7 @@ nav {
 /* all navbar code end here */
 /* main code starts here */
 .main{
-    height: 105rem;
+    height: 79rem;
     width: 100%;
     /* background-color: orange; */
     position: relative;
@@ -200,7 +201,7 @@ nav {
 }
 /* this part ends here */
 .attributes-part {
-  height: 74%;
+  height: 95%;
   width: 17%;
   margin-left: 9.3%;
   margin-top: 1%;
@@ -285,8 +286,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     align-items: center;
 
 }
-.right-side-content i{
-    color: rgba(13, 110, 253, 1);
+.right-side-content input{
     margin-right: 1%;
     margin-left: 10%;
 }
@@ -302,6 +302,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
    border: 1px solid rgba(222, 226, 231, 1);
      border-top-left-radius: 6px;
      border-bottom-left-radius: 6px;
+     background-color: rgba(255, 255, 255, 1);
 }
 .grid-btn i{
     color: black;
@@ -359,31 +360,274 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-top: 0.5%;
 }
 .tag-box p{
-    font-size: 0.7vw;
+    font-size: 0.8vw;
     font-weight: 600;
 }
 
-
-/* product section starts here */
-.products-parent{
-    height: 70%;
-    width: 65%;
-    background-color: blue;
-    position: absolute;
-    top: 10%;
-    left: 28%;
+/* Product section container */
+.products-parent {
+  height: 90%;
+  width: 65%;
+  position: absolute;
+  top: 12%;
+  left: 28%;
+  overflow: hidden;
 }
+
+/* Full product card */
+.product-box {
+  margin-left: 0.1%;
+  height: 15.9%;
+  width: 99.5%;
+  background-color: rgba(255, 255, 255, 1);
+  margin-top: 0.7%;
+  border: 1px solid rgba(222, 226, 231, 1);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+
+/* Inner card layout */
+.product-card {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  
+}
+
+/* Product image */
+.product-card img {
+  width: 19.6%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-top: 1px;
+}
+
+/* Product text/info container */
+.product-info {
+  padding-top: 1%;
+  height: auto;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 0;
+}
+
+/* Product title */
+.product-info h4 {
+  font-size: 1.2vw;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Price section */
+.product-info > p {
+  font-size: 1.3vw;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  color: rgba(28, 28, 28, 1);
+  margin-top: 0.4rem;
+}
+
+.product-info p del {
+  color: rgba(139, 150, 165, 1);
+  font-size: 0.5vw;
+  margin-left: 1%;
+
+}
+
+/* Rating and status row */
+
+
+#rating .score {
+  color: rgba(255, 144, 23, 1);
+}
+
+#rating .orders {
+  color: rgba(139, 150, 165, 1);
+  font-weight: 500;
+  font-size: 0.95vw;
+}
+
+#rating .shipping {
+  color: #00a82d;
+  font-weight: 600;
+  font-size: 0.95vw;
+}
+
+/* Short product description */
+.desc {
+  color: #555;
+  font-size: 0.95vw;
+  margin: 0.4rem 0;
+}
+
+/* View details link */
+.view-details {
+  font-size: 0.95vw;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Love/heart icon box */
+.love-sign {
+  height: 17%;
+  width: 4%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(222, 226, 231, 1);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(13, 110, 253, 1);
+  margin-left: auto;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+
+/* this section ends here above section is for list styling */
+.grid-parent{
+  
+  height: 90%;
+  width: 65%;
+  position: absolute;
+  top: 12%;
+  left: 28%;
+  overflow: hidden;
+ display: flex;
+ justify-content: space-evenly;
+ visibility: hidden;
+ flex-wrap: wrap;
+
+}
+.grid-box {
+  width: 27%;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 2px 2px 0.2rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 29%;
+  border: 1px solid rgba(222, 226, 231, 1);
+}
+
+.grid-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-image {
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.grid-info {
+  width: 100%;
+  /* text-align: center; */
+  border-top: 1px solid rgba(239, 242, 244, 1);
+  width: 100%;
+  padding: 0.7rem;
+}
+
+.grid-price {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.grid-price del {
+  font-size: 0.9rem;
+  color: rgba(139, 150, 165, 1);
+  margin-left: 0.5em;
+  font-weight: 400;
+}
+
+
+.grid-stars {
+  font-size: 1rem;
+  color: orange;
+  margin-bottom: 0.2rem;
+}
+
+.grid-rating-value {
+  font-size: 0.9rem;
+  color: #444;
+  margin-left: 0.5em;
+}
+
+.grid-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.3;
+}
+/* this section ends here */
+
+/* last pages section code strts here */
+.pages-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: sans-serif;
+  width: 25%;
+  height: 3%;
+  margin-top: 3%;
+  margin-left: 72.5%;
+}
+
+.pages-dropdown {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pages-pagination {
+  display: flex;
+}
+
+.pages-btn {
+  border: 1px solid #ddd;
+  background-color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #333;
+}
+
+.pages-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.pages-active {
+  background-color: #f1f5f9;
+  border-color: #ccc;
+  color: black;
+  font-weight: bold;
+}
+/* ends here */
+
 /* second attribute box */
 .options-parent {
   display: flex;
   flex-direction: column;
   gap: 6px;
   margin-top: 4px;
-}
+}  
 
 .options-parent label {
   font-size: 0.8vw;
-}
+}  
 
 .options-parent input[type="checkbox"] {
   /* height: 20px; */
@@ -391,7 +635,9 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   transform: scale(1.2);
   margin-right: 8px;
   margin-top: 8px;
-}
+}  
+
+
 /* third attribute part price range code here */
 .price-filter {
   width: 100%;

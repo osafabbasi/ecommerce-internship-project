@@ -89,3 +89,256 @@ clearFilter.addEventListener("click", () => {
     checkbox.checked = false;
   });
 });
+
+// array for products
+const products = [
+  {
+    name: "Canon Cmera EOS 2000, Black 10x zoom",
+    price: "$998.00",
+    originalPrice: "$1128.00",
+    rating: 7.5,
+    orders: 154,
+    shipping: "Free Shipping",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    image: "assets/image/tech/1.jpg"
+  },
+  {
+    name: "GoPro HERO6 4K Action Camera - Black",
+    price: "$998.00",
+    originalPrice: null,
+    rating: 7.5,
+    orders: 154,
+    shipping: "Free Shipping",
+    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+    image: "assets/image/tech/3.jpg"
+  },
+  {
+    name: "GoPro HERO6 4K Action Camera - Black",
+    price: "$998.00",
+    originalPrice: null,
+    rating: 7.5,
+    orders: 154,
+    shipping: "Free Shipping",
+    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+    image: "assets/image/tech/2.jpg"
+  },
+  {
+    name: "GoPro HERO6 4K Action Camera - Black",
+    price: "$998.00",
+    originalPrice: null,
+    rating: 7.5,
+    orders: 154,
+    shipping: "Free Shipping",
+    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+    image: "assets/image/tech/6.jpg"
+  },
+  {
+    name: "GoPro HERO6 4K Action Camera - Black",
+    price: "$998.00",
+    originalPrice: "$1128.00",
+    rating: 7.5,
+    orders: 154,
+    shipping: "Free Shipping",
+    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+    image: "assets/image/tech/8.jpg"
+  },
+  {
+    name: "GoPro HERO6 4K Action Camera - Black",
+    price: "$998.00",
+    originalPrice: null,
+    rating: 7.5,
+    orders: 154,
+    shipping: "Free Shipping",
+    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+    image: "assets/image/tech/9.jpg"
+  }
+];
+const container = document.querySelector(".products-parent");
+const gridBtn = document.querySelector('.grid-btn');
+ const listBtn = document.querySelector('.list-btn');
+
+const styleList = () => {
+  gridBtn.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+listBtn.style.backgroundColor = 'rgba(239, 242, 244, 1)';
+  gridParent.style.visibility = "hidden";
+  renderListProducts(); // call it to render the boxes
+}
+
+
+function renderListProducts() {
+
+
+  products.forEach(product => {
+    const productBox = document.createElement("div");
+    productBox.classList.add('product-box');
+
+    productBox.innerHTML += `
+  <div class="product-card">
+    <img src="${product.image}" alt="${product.name}" />
+    <div class="product-info">
+      <h4>${product.name}</h4>
+      
+      <p>
+        ${product.price}
+        ${product.originalPrice ? `<del style="color:grey; font-size: 0.8em;">${product.originalPrice}</del>` : ""}
+      </p>
+      
+      <p style="display: flex; align-items: center; gap: 1px;">
+        <span style="color: orange;font-size:1.4vw;">★★★★☆</span> 
+        <span style="color: #f19e1b;font-size:1.2vw;margin-left:2%;margin-right:1%">${product.rating}</span> 
+        <span style="color: #999;margin-right:2%;font-size:1.1vw"> • ${product.orders} orders</span> 
+        <span style="color: rgba(0, 181, 23, 1); font-weight: 500;font-size:1vw">• ${product.shipping}</span>
+      </p>
+      
+      <p style="color: #555;font-size:1vw;color:rgba(80, 80, 80, 1);font-weight:400">${product.description}</p>
+      <a href="#" style="color: #007bff; text-decoration: none;font-size:0.9vw">View details</a>
+    </div>
+    <div class="love-sign">
+      <i class="ri-heart-line"></i>
+    </div>
+  </div>
+`;
+    container.appendChild(productBox);
+  });
+}
+
+renderListProducts();
+
+
+const gridProducts = [
+  {
+
+    image: "assets/image/tech/1.jpg",
+    price: "$99.50",
+    originalPrice: "$1128.00",
+    rating: 7.5,
+    stars: "★★★★☆",
+    description: "GoPro HERO6 4K Action Camera - Black",
+
+  },
+  {
+
+    image: "assets/image/tech/4.jpg",
+    price: "$99.50",
+    originalPrice: "$1128.00",
+    rating: 5.9,
+    stars: "★★★★☆",
+    description: "GoPro HERO6 4K Action Camera - Black",
+
+  },
+  {
+
+    image: "assets/image/tech/3.jpg",
+    price: "$99.50",
+    originalPrice: "$1128.00",
+    rating: 7.5,
+    stars: "★★★★☆",
+    description: "GoPro HERO6 4K Action Camera - Black",
+
+  },
+  {
+
+    image: "assets/image/tech/2.jpg",
+    price: "$99.50",
+    originalPrice: "$1128.00",
+    rating: 7.5,
+    stars: "★★★★☆",
+    description: "GoPro HERO6 4K Action Camera - Black",
+
+  },
+  {
+
+    image: "assets/image/tech/6.jpg",
+    price: "$99.50",
+    originalPrice: "$1128.00",
+    rating: 7.5,
+    stars: "★★★★☆",
+    description: "GoPro HERO6 4K Action Camera - Black",
+
+  },
+  {
+
+    image: "assets/image/tech/4.jpg",
+    price: "$99.50",
+    originalPrice: "$1128.00",
+    rating: 7.5,
+    stars: "★★★★☆",
+    description: "GoPro HERO6 4K Action Camera - Black",
+
+  },
+  {
+
+    image: "assets/image/tech/7.jpg",
+    price: "$99.50",
+    originalPrice: "$1128.00",
+    rating: 7.5,
+    stars: "★★★★☆",
+    description: "GoPro HERO6 4K Action Camera - Black",
+
+  },
+  {
+
+    image: "assets/image/tech/8.jpg",
+    price: "$99.50",
+    originalPrice: "$1128.00",
+    rating: 7.5,
+    stars: "★★★★☆",
+    description: "GoPro HERO6 4K Action Camera - Black",
+  },
+  {
+    image: "assets/image/tech/1.jpg",
+    price: "$99.50",
+    originalPrice: "$1128.00",
+    rating: 7.5,
+    stars: "★★★★☆",
+    description: "GoPro HERO6 4K Action Camera - Black",
+  }
+];
+ 
+const styleGrid = () => {
+gridBtn.style.backgroundColor = 'rgba(239, 242, 244, 1)';
+listBtn.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+  gridParent.style.visibility = "visible";
+  container.innerHTML = ''; // Removes all .product-box inside
+  renderGridProducts(); // call it to render the boxes
+}
+
+
+
+const gridParent = document.querySelector(".grid-parent");
+
+function renderGridProducts() {
+  container.innerHTML = ''; // Removes all .product-box inside
+  gridParent.innerHTML = "";
+  gridParent.style.visibility = "visible";
+
+  gridProducts.forEach(product => {
+    const gridBox = document.createElement("div");
+    gridBox.classList.add("grid-box");
+
+    gridBox.innerHTML = `
+      <div class="grid-card">
+        <img class="grid-image" src="${product.image}" alt="${product.name}" />
+        <div class="grid-info">
+       
+        
+       
+        <p class="grid-price">
+  ${product.price} <del>${product.originalPrice}</del>
+  <i class="ri-heart-line" style="display: inline-block;margin-left: 5rem;color: rgba(13, 110, 253, 1);border: 1px solid rgba(222, 226, 231, 1);padding: 4px;border-radius: 20%;vertical-align: middle;"></i>
+</p>
+          <p class="grid-stars">
+            <span class="grid-rating-stars">${product.stars}</span>
+            <span class="grid-rating-value">${product.rating}</span>
+          </p>
+          <p class="grid-description">${product.description}</p>
+        </div>
+      </div>
+    `;
+
+    gridParent.appendChild(gridBox);
+  });
+}
+
+
+
