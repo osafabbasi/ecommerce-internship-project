@@ -1,0 +1,831 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(247, 250, 252, 1);
+    overflow-x: hidden;
+     font-family: "Inter", sans-serif;
+}
+button:active{
+    opacity: 0.5;
+}
+/* below is the code for the navbar */
+nav {
+    background-color: rgba(255, 255, 255, 1);
+    height: 12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgba(176, 184, 194, 0.2);;
+}
+
+.logo {
+    margin-left: 3%;
+}
+
+/* search bar code starts from here */
+.spacer{
+    height: 75%;
+    width: 45%;
+}
+
+/* below is the code for options in navbar */
+.options-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 20%;
+    height: 75%;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.opt {
+    height: 90%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.options-menu .opt i {
+    /* opacity: ; */
+    font-size: clamp(1.2rem, 2vw, 1rem);
+    color: rgba(139, 150, 165, 1);
+}
+
+.opt p,
+.opt-nav2 {
+    color: rgba(139, 150, 165, 1);
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(0.5rem, 1.5vw, 0.9rem);
+    white-space: nowrap;
+}
+
+/* the navbar code ends here */
+.main{
+    height: 70rem;
+    padding: 1%;
+    width: 86%;
+    margin-left: 5.9%;
+    margin-top: 1%;
+}
+/* first part code strats */
+
+
+
+
+/* Main Container Styles */
+
+.cart-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-wrapper {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cart-main {
+    flex: 3;
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+}
+.cart-wrapper {
+    height: 55%;
+    display: flex;
+    gap: 1.5rem;
+    background: #f8f9fa;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Left Section */
+.cart-main {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(222, 226, 231, 1);
+    border-radius: 6px;
+}
+
+.cart-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Cart Items */
+.cart-items {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.cart-item-box {
+    display: flex;
+    gap: 1rem;
+    background: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.3rem;
+    position: relative; 
+}
+
+.cart-item-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px; 
+    width: calc(100% - 40px); 
+    height: 1px;
+    background-color: #E5E5E5; 
+}
+
+.item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-info h3 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.item-meta {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 0.75rem;
+}
+
+.item-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-remove, .btn-save {
+    padding: 0.25rem 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.btn-remove {
+    background: #ffebee;
+    color: #f44336;
+}
+
+.btn-save {
+    background: #e8f5e9;
+    color: rgba(13, 110, 253, 1);
+}
+
+.item-price-qty {
+    text-align: right;
+    min-width: 100px;
+}
+
+.price {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.qty-selector select {
+    padding: 0.25rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 80px;
+}
+
+/* Cart Actions */
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+
+ /* Shared styles for both */
+.back-to-shop, .remove-all {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Specific styles for back-to-shop link */
+.back-to-shop {
+    background: #2196f3;
+    color: white;
+    text-decoration: none; /* Remove default link underline */
+    font-size: inherit; /* Match your text size */
+}
+
+/* Optional hover effect */
+.back-to-shop:hover {
+    background: #1976d2;
+}
+
+
+.remove-all {
+    background: #ffffff;
+    color: rgba(13, 110, 253, 1);
+    border: 1px solid rgba(222, 226, 231, 1);
+}
+
+/* Right Sidebar */
+/* Sidebar Container */
+.cart-sidebar {
+    flex: 1;
+    min-width: 300px;
+    max-width: 380px;
+}
+
+/* Coupon Section */
+.coupon-box {
+    background: white;
+    padding: 1.25rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.coupon-title {
+    color: #333;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.coupon-input-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.coupon-input {
+    flex: 1;
+    padding: 0.625rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.apply-btn {
+    background: transparent;
+    color: #0d6efd;
+    border: none;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+/* Summary Section */
+.summary-box {
+    background: white;
+    padding: 1.25rem;
+    border-radius: 8px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.summary-row .amount {
+    font-weight: 500;
+}
+
+/* Special Rows */
+.summary-row.discount .amount {
+    color: #dc3545;
+}
+
+.summary-row.tax .amount {
+    color: #198754;
+}
+
+.summary-row.total {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    width: 100%;
+    background: #00a524;
+    color: white;
+    border: none;
+    padding: 0.875rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: background-color 0.2s;
+}
+
+.checkout-btn:hover {
+    background: #008d1f;
+}
+
+/* Payment Methods */
+.payment-methods {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 1rem;
+    /* background-color: red; */
+}
+
+.payment-methods img {
+    width: 35px;  /* Fixed width container */
+    height: 32px; /* Fixed height container */
+    padding: 6px;
+    background: white;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    object-fit: contain; /* This maintains aspect ratio */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Specific adjustments for each logo */
+.payment-methods img[alt="American Express"] {
+    object-position: center; /* Centers the Amex logo */
+}
+
+.payment-methods img[alt="Mastercard"] {
+    padding: 6px 4px; /* Slightly less padding for Mastercard */
+}
+
+.payment-methods img[alt="PayPal"] {
+    padding: 8px 6px; /* Adjusted padding for PayPal */
+}
+
+.payment-methods img[alt="Visa"] {
+    padding: 10px 6px; /* More vertical padding for VISA */
+}
+
+.payment-methods img[alt="Apple Pay"] {
+    padding: 8px 6px; /* Adjusted for Apple Pay */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .cart-sidebar {
+        min-width: 100%;
+        max-width: none;
+    }
+}
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .cart-wrapper {
+        flex-direction: column;
+    }
+    
+    .cart-sidebar {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+    }
+    
+    .item-price-qty {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.saved-section-container {
+    width: 100%;
+    height: 20rem;
+    margin-top: -35%;
+}
+
+/* Heading Box */
+.saved-heading {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.saved-heading h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Content Box */
+.saved-content {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Services Row */
+.services-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.service-icon {
+    font-size: 24px;
+    color: #666;
+}
+
+.service-text h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.service-text p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 15px;
+    background: #fff;
+}
+
+.product-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 4px;
+    mix-blend-mode: multiply;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.product-name {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.move-cart-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    padding: 0;
+    background: none;
+    color: #2196f3;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.move-cart-btn::before {
+    content: "🛒"; /* Or use a cart icon */
+    font-size: 14px;
+}
+/* Responsive Design */
+@media (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Discount Banner */
+.discount-banner {
+  background: linear-gradient(70deg, #2F80ED 50%, #0052CC 50%);
+  border-radius: 8px;
+  padding: 3.5%;
+  margin-top: 13%;
+  color: #fff;
+  width: 93%;
+  /* margin-left: %; */
+  height: 2%;
+}
+
+/* Content Layout */
+.discount-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Left Text */
+.discount-text h4 {
+  margin: 0;
+  font-size: 1.5vw;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.discount-text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+  
+}
+
+/* CTA Button */
+.discount-btn {
+  background-color: #FFA000;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.discount-btn:hover {
+  background-color: #ff8c00;
+}
+
+/* footer code starts here */
+footer{
+    height: 46%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+margin-top: 13%;
+}
+.newsletter-box{
+    height: 40%;
+    width: 100%;
+    background-color: rgba(239, 242, 244, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-text-area{
+    height: 80%;
+    width: 60%;
+    padding-top: 3.3%;
+}
+.newsletter-text-area h4{
+    font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5vw;
+  margin-left: 30%;
+  margin-top: 1%;
+  color: rgba(28, 28, 28, 1);
+}
+.newsletter-text-area p{
+     font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1vw;
+  margin-left: 18%;
+  margin-top: 1%;
+  color:rgba(96, 96, 96, 1);
+}
+.newsletter-form{
+    height: 30%;
+    width: 50%;
+    margin-left: 23%;
+    margin-top: 1%;
+}
+.newsletter-form input{
+    height: 55%;
+    margin-left: 5%;
+   width: 60%;
+   border: 1px solid rgba(222, 226, 231, 1);
+   border-radius: 4px;
+   padding-left: 5%;
+   margin-top: 3%;
+}
+.newsletter-form button{
+    height: 55%;
+   width: 20%;
+   background-color: rgba(18, 127, 255, 1);
+   border: none;
+   border-radius: 5px;
+   color: white;
+}
+
+
+
+/* second footer code starts here */
+
+.footer-wrapper {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-brand-section {
+  flex: 1 1 250px;
+  min-width: 240px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  width: 50%;
+}
+
+
+.footer-description {
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #777;
+}
+.footer-social-icons{
+    display: flex;
+    height: 50px;
+    width: 250px;
+    justify-content: space-evenly;
+    margin-left: -3%;
+    
+}
+.logos-footer{
+    height: 40px;
+    width: 40px;
+    background-color: rgba(189, 196, 205, 1);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links-section {
+  display: flex;
+  gap: 40px;
+  flex: 3 1 700px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  min-width: 120px;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.footer-list a:hover {
+  color: #4A7AFF;
+}
+
+.footer-app-buttons img {
+  width: 120px;
+  margin-bottom: -40px;
+  display: block;
+}
+/* last footer code starts here
+ */
+ .copyright-part{
+    height: 15%;
+    width: 100%;
+    background-color: rgba(239, 242, 244, 1);
+    border: 1px solid rgba(222, 226, 231, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .copyright-text,.copyright-language{
+    height: 70%;
+    width: 20%;
+ }
+ .copyright-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+ }
+ .copyright-text h4{
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(96, 96, 96, 1);
+ }
+ .copyright-language {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .copyright-language img{
+    width: 10%;
+ }
+ .copyright-language h4{
+      font-weight: 400;
+    font-style: normal;
+    color: rgba(96, 96, 96, 1);
+ }

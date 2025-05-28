@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/ecommerce-project/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- cdn for font -->
@@ -24,7 +24,7 @@
     <!-- navigation bar -->
     <nav>
         <div class="logo"> <!-- for logo-->
-            <img src="/ecommerce-project/assets/image/logo-colored.svg" alt="Logo">
+            <img src="assets/image/logo-colored.svg" alt="Logo">
         </div>
         <div class="search-bar"> <!-- for search-bar-->
             <input type="text" placeholder="Search"> <!-- the text input of search-bar-->
@@ -48,7 +48,7 @@
                 <p>Orders</p>
             </div>
             <div class="opt"><i class="ri-shopping-cart-2-fill"></i>
-                <p>My Cart</p>
+                <p><a href="cart.html" style="text-decoration: none;color: rgba(139, 150, 165, 1);">My Cart</a></p>
             </div>
         </div>
     </nav>
@@ -79,7 +79,7 @@
                 <p>English,USD</p><i class="ri-arrow-down-s-line"></i>
             </div>
             <div class="country">
-                <p>Ship to</p><img src="/ecommerce-project/assets/image/flags/germany.png" alt="germany"><i
+                <p>Ship to</p><img src="assets/image/flags/germany.png" alt="germany"><i
                     class="ri-arrow-down-s-line"></i>
             </div>
         </div>
@@ -129,7 +129,7 @@
 
         <div class="menu" id="log-in-section">
             <div class="log-in-boxes">
-                <img src="/ecommerce-project/assets/image/Avatar.png" alt="avatar">
+                <img src="assets/image/Avatar.png" alt="avatar">
                 <p>Hi,User <br> lets get started</p>
                 <button class="join-now">Join Now</button>
                 <button class="log-in">Log in</button>
@@ -162,31 +162,31 @@
             </div>
         </div>
         <div class="sale-section-boxes">
-            <img src="/ecommerce-project/assets/image/8.jpg" alt="images of products">
+            <img src="assets/image/8.jpg" alt="images of products">
             <p>Smart Watches</p>
             <div class="price-discount">
                 <p>-25%</p>
             </div>
         </div>
-        <div class="sale-section-boxes"><img src="/ecommerce-project/assets/image/7.jpg" alt="images of products">
+        <div class="sale-section-boxes"><img src="assets/image/7.jpg" alt="images of products">
             <p style="margin-left: 36%;">Laptops</p>
             <div class="price-discount">
                 <p>-15%</p>
             </div>
         </div>
-        <div class="sale-section-boxes"><img src="/ecommerce-project/assets/image/6.jpg" alt="images of products">
+        <div class="sale-section-boxes"><img src="assets/image/6.jpg" alt="images of products">
             <p>GoPro cameras</p>
             <div class="price-discount">
                 <p>-40%</p>
             </div>
         </div>
-        <div class="sale-section-boxes"><img src="/ecommerce-project/assets/image/5.jpg" alt="images of products">
+        <div class="sale-section-boxes"><img src="assets/image/5.jpg" alt="images of products">
             <p style="margin-left: 30%;">Headphones</p>
             <div class="price-discount">
                 <p>-25%</p>
             </div>
         </div>
-        <div class="sale-section-boxes"><img src="/ecommerce-project/assets/image/3.jpg" alt="images of products">
+        <div class="sale-section-boxes"><img src="assets/image/3.jpg" alt="images of products">
             <p style="margin-left: 24%;">Canon cameras</p>
             <div class="price-discount">
                 <p>-25%</p>
@@ -227,7 +227,8 @@
             <textarea name="details" id="details" placeholder="Type more details"></textarea>
             <input type="text" placeholder="Quantity" style="width: 45%;">
             <!-- below is code for dropdown -->
-            <input list="quantities" id="quantityInput" name="quantity" placeholder="Pcs" /> <!--the problem in this is that it doesnt contain that logo because placeholder doesnt support it and i made the one in whihc user can also enter thier own price-->
+            <input list="quantities" id="quantityInput" name="quantity" placeholder="Pcs" />
+            <!--the problem in this is that it doesnt contain that logo because placeholder doesnt support it and i made the one in whihc user can also enter thier own price-->
             <datalist id="quantities">
                 <option value="1">
                 <option value="2">
@@ -235,147 +236,152 @@
                 <option value="4">
                 <option value="5">
             </datalist>
-          <button>Send Inquiry</button>
+            <button>Send Inquiry</button>
         </div>
     </section>
     <section class="recommended-products-section">
-        <div class="main-text"><h2>Recommended items</h2></div>
+        <div class="main-text">
+            <h2>Recommended items</h2>
+        </div>
         <div class="products-box-recommended">
-           
+
         </div>
     </section>
-   <section class="extra-services">
-    <div class="extra-text">
-       <h2>Our extra services</h2>
-    </div>   
-    <div class="services-parent">
-        <div class="services">
-            <div class="icon-area"><i class="ri-search-line"></i></div>
-            <div class="text-area-services">
-                <p>Source from <br>Industry Hubs</p>
+    <section class="extra-services">
+        <div class="extra-text">
+            <h2>Our extra services</h2>
+        </div>
+        <div class="services-parent">
+            <div class="services">
+                <div class="icon-area"><i class="ri-search-line"></i></div>
+                <div class="text-area-services">
+                    <p>Source from <br>Industry Hubs</p>
+                </div>
+            </div> <!--the background would be the image setted -->
+            <div class="services">
+                <div class="icon-area"><i class="ri-archive-line"></i></div>
+                <div class="text-area-services">
+                    <p>Customize Your <br>Products</p>
+                </div>
             </div>
-        </div> <!--the background would be the image setted -->
-        <div class="services">
-               <div class="icon-area"><i class="ri-archive-line"></i></div>
-            <div class="text-area-services">
-                <p>Customize Your <br>Products</p>
-        </div>
-        </div>
-        <div class="services">
-               <div class="icon-area"><i class="ri-send-plane-fill"></i></div>
-            <div class="text-area-services">
-                <p>Fast, reliable shipping <br>by ocean or air</p>
-        </div>
-        </div>
-        <div class="services">
-               <div class="icon-area"><i class="ri-shield-check-line"></i></div>
-            <div class="text-area-services">
-                <p>Product monitoring <br>and inspection</p>
-        </div>
-    </div>
-</section>
-<section class="suppliers-countries">
- <div class="countries-text">
-    <h2>Suppliers by region</h2>
- </div>
- <div class="countries-area">
-    
- </div>
-</section>
-<footer>
-    <div class="newsletter-box">
-         <div class="newsletter-text-area">
-            <h4>Subscribe on our newsletter</h4>
-            <p>Get daily news on upcoming offers from many suppliers all over the world</p>
-            <div class="newsletter-form">
-                 <input type="text" placeholder="Mail">
-                 <button>Subscribe</button>
+            <div class="services">
+                <div class="icon-area"><i class="ri-send-plane-fill"></i></div>
+                <div class="text-area-services">
+                    <p>Fast, reliable shipping <br>by ocean or air</p>
+                </div>
             </div>
-         </div>
-    </div>
-    <!-- code for the second part of footer -->
-     <div class="footer-wrapper">
-  <div class="footer-container">
-    <div class="footer-content">
-      <div class="footer-brand-section">
-        <div class="footer-logo">
-          <img src="/ecommerce-project/assets/image/logo-colored.svg" alt="Brand Logo">
-          
+            <div class="services">
+                <div class="icon-area"><i class="ri-shield-check-line"></i></div>
+                <div class="text-area-services">
+                    <p>Product monitoring <br>and inspection</p>
+                </div>
+            </div>
+    </section>
+    <section class="suppliers-countries">
+        <div class="countries-text">
+            <h2>Suppliers by region</h2>
         </div>
-        <p class="footer-description">
-          Best information about the company<br>gies here but now lorem ipsum is
-        </p>
-        <div class="footer-social-icons">
-          <div class="logos-footer"><i class="ri-facebook-line" style="color: white;"></i></div>
-          <div class="logos-footer"><i class="ri-twitter-fill" style="color: white;"></i></div>
-          <div class="logos-footer"><i class="ri-linkedin-fill"  style="color: white;"></i></div>
-          <div class="logos-footer"><i class="ri-instagram-line" style="color: white;"></i></div>
-          <div class="logos-footer"><i class="ri-youtube-line" style="color: white;"></i></div>
-        </div>
-      </div>
+        <div class="countries-area">
 
-      <div class="footer-links-section">
-        <div class="footer-column">
-          <h4 class="footer-title">About</h4>
-          <ul class="footer-list">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Find store</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">Blogs</a></li>
-          </ul>
         </div>
-        <div class="footer-column">
-          <h4 class="footer-title">Partnership</h4>
-          <ul class="footer-list">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Find store</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">Blogs</a></li>
-          </ul>
+    </section>
+    <footer>
+        <div class="newsletter-box">
+            <div class="newsletter-text-area">
+                <h4>Subscribe on our newsletter</h4>
+                <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+                <div class="newsletter-form">
+                    <input type="text" placeholder="Mail">
+                    <button>Subscribe</button>
+                </div>
+            </div>
         </div>
-        <div class="footer-column">
-          <h4 class="footer-title">Information</h4>
-          <ul class="footer-list">
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Money Refund</a></li>
-            <li><a href="#">Shipping</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
+        <!-- code for the second part of footer -->
+        <div class="footer-wrapper">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-brand-section">
+                        <div class="footer-logo">
+                            <img src="assets/image/logo-colored.svg" alt="Brand Logo">
+
+                        </div>
+                        <p class="footer-description">
+                            Best information about the company<br>gies here but now lorem ipsum is
+                        </p>
+                        <div class="footer-social-icons">
+                            <div class="logos-footer"><i class="ri-facebook-line" style="color: white;"></i></div>
+                            <div class="logos-footer"><i class="ri-twitter-fill" style="color: white;"></i></div>
+                            <div class="logos-footer"><i class="ri-linkedin-fill" style="color: white;"></i></div>
+                            <div class="logos-footer"><i class="ri-instagram-line" style="color: white;"></i></div>
+                            <div class="logos-footer"><i class="ri-youtube-line" style="color: white;"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="footer-links-section">
+                        <div class="footer-column">
+                            <h4 class="footer-title">About</h4>
+                            <ul class="footer-list">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Find store</a></li>
+                                <li><a href="#">Categories</a></li>
+                                <li><a href="#">Blogs</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4 class="footer-title">Partnership</h4>
+                            <ul class="footer-list">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Find store</a></li>
+                                <li><a href="#">Categories</a></li>
+                                <li><a href="#">Blogs</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4 class="footer-title">Information</h4>
+                            <ul class="footer-list">
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Money Refund</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4 class="footer-title">For users</h4>
+                            <ul class="footer-list">
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Register</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="#">My Orders</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4 class="footer-title">Get app</h4>
+                            <div class="footer-app-buttons">
+                                <a href="#"><img src="assets/image/apple-removebg-preview.png"
+                                        alt="App Store"></a>
+                                <a href="#"><img src="assets/image/google-removebg-preview.png"
+                                        alt="Google Play"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-column">
-          <h4 class="footer-title">For users</h4>
-          <ul class="footer-list">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">My Orders</a></li>
-          </ul>
+        <!-- code for the last part -->
+        <div class="copyright-part">
+            <div class="copyright-text">
+                <h4>© 2023 Ecommerce. </h4>
+            </div>
+            <div class="copyright-language">
+                <img src="assets/image/flags/usa.png" alt="flag">
+                <h4>English </h4><i class="ri-arrow-up-s-line"></i>
+            </div>
         </div>
-        <div class="footer-column">
-          <h4 class="footer-title">Get app</h4>
-          <div class="footer-app-buttons">
-            <a href="#"><img src="/ecommerce-project/assets/image/apple-removebg-preview.png" alt="App Store"></a>
-            <a href="#"><img src="/ecommerce-project/assets/image/google-removebg-preview.png" alt="Google Play"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- code for the last part -->
- <div class="copyright-part">
-    <div class="copyright-text">
-        <h4>© 2023 Ecommerce. </h4>
-    </div> 
-     <div class="copyright-language">
-        <img src="/ecommerce-project/assets/image/flags/usa.png" alt="flag"><h4>English </h4><i class="ri-arrow-up-s-line"></i>
-    </div>
- </div>
-</footer>
+    </footer>
 
 
 
-    <script src="/ecommerce-project/js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

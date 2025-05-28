@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/ecommerce-project/css/page2style.css">
+    <link rel="stylesheet" href="css/page3.css">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- cdn for font -->
@@ -25,7 +25,7 @@
     <!-- navigation bar -->
     <nav>
         <div class="logo"> <!-- for logo-->
-            <img src="/ecommerce-project/assets/image/logo-colored.svg" alt="Logo">
+            <img src="assets/image/logo-colored.svg" alt="Logo">
         </div>
         <div class="search-bar"> <!-- for search-bar-->
             <input type="text" placeholder="Search"> <!-- the text input of search-bar-->
@@ -80,198 +80,296 @@
                 <p>English,USD</p><i class="ri-arrow-down-s-line"></i>
             </div>
             <div class="country">
-                <p>Ship to</p><img src="/ecommerce-project/assets/image/flags/germany.png" alt="germany"><i
+                <p>Ship to</p><img src="assets/image/flags/germany.png" alt="germany"><i
                     class="ri-arrow-down-s-line"></i>
             </div>
         </div>
     </section>
     <!-- navbar code ends here -->
-    <!-- main div for the page starts here  -->
-    <section class="main">
-        <div class="first-part">
+     <!-- main code strsta here -->
+      <div class="main">
+        <!-- below is the code for small categories above the boxes -->
+    <div class="first-part">
             <p>Home <i class="ri-arrow-right-s-line"></i> Clothings
                 <i class="ri-arrow-right-s-line"></i> Men wear <i class="ri-arrow-right-s-line"></i> Summer clothing
             </p>
         </div>
-        <div class="content-top-parent">
-            <div class="content-top-box">
-                <h4>12,911 items in <span>Mobile accessory</span></h4>
-                <div class="right-side-content">
-                    <input type="checkbox">
-                    <p>Verified only</p>
-                    <select name="fetured" id="featured">
-                        <option value="Featured">Featured</option>
-                        <option value="Recommended">Recommended</option>
-                        <option value="Low-price">Low Price</option>
-                        <option value="Good-quality">Good quality</option>
-                    </select>
-                    <button class="grid-btn" onclick="styleGrid()"><i class="ri-layout-grid-fill"></i></button>
-                    <button class="list-btn" onclick="styleList()"><i class="ri-list-unordered"></i></button>
-
-                </div>
-            </div>
-            <div class="tag-container">
-                <p class="clear-filter">clear all filter</p>
-            </div>
-        </div>
-        <!-- below is the part for search filters which is functional and it also adds filters  -->
-        <div class="attributes-part">
-
-            <div class="attributes" id="attribute-first">
-                <button>
-                    <p>Category</p><i class="ri-arrow-up-s-line"></i>
-                </button>
-                <div class="options-parent">
-                    <p class="options">Mobile accessory</p>
-                    <p class="options">Electronics</p>
-                    <p class="options">Smartphones</p>
-                    <p class="options">Modern tech</p>
-                    <p class="options">See all</p>
-                </div>
-            </div>
-
-            <div class="attributes" id="2">
-                <button>
-                    <p>Brands</p><i class="ri-arrow-up-s-line"></i>
-                </button>
-                <div class="options-parent" id="second-attribute">
-                    <label><input type="checkbox" value="Samsung"> Samsung</label>
-                    <label><input type="checkbox" value="Apple"> Apple</label>
-                    <label><input type="checkbox" value="Huawei"> Huawei</label>
-                    <label><input type="checkbox" value="Pocco"> Pocco</label>
-                    <label><input type="checkbox" value="Lenovo"> Lenovo</label>
-                </div>
-            </div>
-
-
-            <div class="attributes" id="3">
-                <button>
-                    <p>Features</p><i class="ri-arrow-up-s-line"></i>
-                </button>
-                <div class="options-parent" id="third-attribute">
-                    <label><input type="checkbox" value="Metallic"> Metallic</label>
-                    <label><input type="checkbox" value="Plastic cover"> Plastic cover</label>
-                    <label><input type="checkbox" value="8GB Ram"> 8GB Ram</label>
-                    <label><input type="checkbox" value="Super power"> Super power</label>
-                    <label><input type="checkbox" value="Large memory"> Large memory</label>
-                </div>
-            </div>
-
-            <div class="attributes" id="4">
-                <button>
-                    <p>Price range</p><i class="ri-arrow-up-s-line"></i>
-                </button>
-                <div class="options-parent">
-                    <div class="price-filter">
-                        <div class="price-input">
-                            <div class="field">
-                                <label for="min-price">Min</label>
-                                <input type="number" id="min-price" value="2500">
-                            </div>
-                            <div class="separator">-</div>
-                            <div class="field">
-                                <label for="max-price">Max</label>
-                                <input type="number" id="max-price" value="7500">
-                            </div>
-                        </div>
-                        <div class="slider">
-                            <div class="progress"></div>
-                        </div>
-                        <div class="range-input">
-                            <input type="range" id="range-min" min="0" max="10000" value="2500" step="100">
-                            <input type="range" id="range-max" min="0" max="10000" value="7500" step="100">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="attributes" id="5">
-                <button>
-                    <p>Condition</p><i class="ri-arrow-up-s-line"></i>
-                </button>
-                <div class="filter-section condition-filter">
-                    <label><input type="checkbox" value="New"> New</label>
-                    <label><input type="checkbox" value="Used"> Used</label>
-                    <label><input type="checkbox" value="Refurbished"> Refurbished</label>
-                </div>
-
-            </div>
-
-            <div class="attributes" id="6">
-                <button>
-                    <p>Ratings</p><i class="ri-arrow-up-s-line"></i>
-                </button>
-                <div class="filter-section ratings-filter">
-
-                    <label>
-                        <input type="checkbox" value="5 star">
-                        <span>★★★★★</span>
-
-                    </label>
-
-                    <label>
-                        <input type="checkbox" value="4 star">
-                        <span>★★★★</span>
-                    </label>
-
-                    <label>
-                        <input type="checkbox" value="3 star"><span>★★★ </span>
-                    </label>
-
-                    <label>
-                        <input type="checkbox" value="2 star">
-                        <span> ★★ </span>
-                    </label>
-                </div>
-
-            </div>
-
-        </div>
-
-
-     <div class="products-parent">
-  <!-- Product cards will be injected here -->
+    <!-- this part ends here -->
+   <div class="content-main">
+    <div class="product-image-parent">
+    <div class="product-image">
+        <img src="assets/image/image34.png" alt="">
     </div>
-    <div class="grid-parent"></div>
-<div class="pages-container">
-  <select class="pages-dropdown">
-    <option>Show 10</option>
-    <option>Show 20</option>
-    <option>Show 50</option>
-  </select>
+    <div class="small-images-parent">
+        <div class="small-images" style="border-color: rgba(80, 80, 80, 1);"><img src="assets/image/image34.png" alt="images"></div>
+        <div class="small-images"><img src="assets/image/image35.png" alt="images"></div>
+        <div class="small-images"><img src="assets/image/image40.png" alt="images"></div>
+        <div class="small-images"><img src="assets/image/image36.png" alt="images"></div>
+        <div class="small-images"><img src="assets/image/image37.png" alt="images"></div>
+        <div class="small-images"><img src="assets/image/image39.png" alt="images"></div>
+    </div>
+    </div>
+    <!-- upper part is for image side -->
+     <div class="product-detail-card">
+  <!-- Stock Status -->
+  <div class="status">✅ In stock</div>
 
-  <div class="pages-pagination">
-    <button class="pages-btn" style="border-top-left-radius: 6px;border-bottom-left-radius: 6px">&#x276E;</button>
-    <button class="pages-btn pages-active">1</button>
-    <button class="pages-btn">2</button>
-    <button class="pages-btn">3</button>
-    <button class="pages-btn" style="border-top-right-radius: 6px;border-bottom-right-radius: 6px">&#x276F;</button>
+  <!-- Title -->
+  <h3>Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h3>
+
+  <!-- Rating Row -->
+  <div class="rating-row">
+    <div class="stars">★★★★★</div>
+    <span class="rating-score">9.3</span>
+    <span class="divider">|</span>
+    <span class="reviews"><i class="ri-message-2-line" style="color: rgba(139, 150, 165, 1);"></i> 32 reviews</span>
+    <span class="divider">|</span>
+    <span class="sold"><i class="ri-shopping-basket-2-line" style="color: rgba(139, 150, 165, 1);"></i> 154 sold</span>
+  </div>
+
+  <!-- Pricing info -->
+  <div class="price-tier">
+    <div class="tier-box red">
+      <div class="price">$98.00</div>
+      <div class="qty">50–100 pcs</div>
+    </div>
+    
+    <div class="tier-box" style="border-left: 1px solid rgba(189, 193, 200, 1);">
+      <div class="price">$90.00</div>
+      <div class="qty">100–700 pcs</div>
+    </div>
+    <div class="tier-box" style="border-left: 1px solid rgba(189, 193, 200, 1);">
+      <div class="price">$78.00</div>
+      <div class="qty">700+ pcs</div>
+    </div>
+  </div>
+
+  <!-- Product Specifications -->
+  <div class="specs">
+    <div class="spec"><span>Price:</span> Negotiable</div>
+    <hr  class="custom-hr">
+    <div class="spec"><span>Type:</span> Classic shoes</div>
+    <div class="spec"><span>Material:</span> Plastic material</div>
+    <div class="spec"><span>Design:</span> Modern nice</div>
+    <hr  class="custom-hr">
+
+    <div class="spec"><span>Customization:</span> Customized logo and design custom packages</div>
+    <div class="spec" style="margin-top: 1%;"><span>Protection:</span> Refund Policy</div>
+    <div class="spec" style="margin-top: 1%;"><span>Warranty:</span> 2 years full warranty</div>
+  </div>
+</div>
+<div class="supplier-card">
+  <div class="supplier-header">
+    <div class="initials">R</div>
+    <div class="supplier-info">
+      <div class="label">Supplier</div>
+      <div class="name">Guanjoi Trading LLC</div>
+    </div>
+  </div>
+  <div class="supplier-status">
+    <div class="status-item">
+      <img src="/ecommerce-project/assets/image/flags/germany.png" alt="niggler" style="width: 20px;"> <span>Germany, Berlin</span>
+    </div>
+    <div class="status-item">
+      <i class="ri-shield-check-line"></i><span>Verified Seller</span>
+    </div>
+    <div class="status-item">
+      <i class="ri-global-line"></i><span>Worldwide shipping</span>
+    </div>
+  </div>
+
+  <button class="btn btn-primary">Send inquiry</button>
+  <button class="btn btn-secondary">Seller’s profile</button>
+
+  <div class="save-later">
+    <i class="ri-heart-line"></i>
+    <span>Save for later</span>
+  </div>
+</div>
+
+   </div>
+ 
+ <!-- Product details section -->
+   <div class="product-section">
+  <!-- Main Left Column -->
+  <div class="main-content-details">
+    <!-- Tabs -->
+    <div class="tabs">
+      <div class="tab active">Description</div>
+      <div class="tab">Reviews</div>
+      <div class="tab">Shipping</div>
+      <div class="tab">About seller</div>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <div class="product-description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>
+Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+      </div>
+
+      <!-- Product Specification Table -->
+      <table class="product-specs">
+        <tr>
+          <td  style="background-color: rgba(239, 242, 244, 1);color: rgba(80, 80, 80, 1);">Model</td>
+          <td style="color: rgba(80, 80, 80, 1);">#8786867</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(239, 242, 244, 1);color: rgba(80, 80, 80, 1);">Style</td>
+          <td style="color: rgba(80, 80, 80, 1);">Classic style</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(239, 242, 244, 1);color: rgba(80, 80, 80, 1);">Certificate</td>
+          <td style="color: rgba(80, 80, 80, 1);">ISO-898921212</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(239, 242, 244, 1);color: rgba(80, 80, 80, 1);">Size</td>
+          <td style="color: rgba(80, 80, 80, 1);">34mm × 450mm × 19mm</td>
+        </tr>
+        <tr>
+          <td style="background-color: rgba(239, 242, 244, 1);color: rgba(80, 80, 80, 1);">Memory</td>
+          <td style="color: rgba(80, 80, 80, 1);">36GB RAM</td>
+        </tr>
+      </table>
+
+      <!-- Feature List -->
+      <ul class="feature-list">
+        <li><i class="ri-check-line" style="color: rgba(139, 150, 165, 1);margin-right: 0.5%;"></i> Some great feature name here</li>
+        <li><i class="ri-check-line" style="color: rgba(139, 150, 165, 1);margin-right: 0.5%;"></i> Lorem ipsum dolor sit amet, consectetur</li>
+        <li><i class="ri-check-line" style="color: rgba(139, 150, 165, 1);margin-right: 0.5%;"></i> Duis aute irure dolor in reprehenderit</li>
+        <li><i class="ri-check-line" style="color: rgba(139, 150, 165, 1);margin-right: 0.5%;"></i> Some great feature name here</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Right Sidebar -->
+  <div class="sidebar">
+    <h4>You may like</h4>
+
+    <div class="sidebar-product">
+      <img src="assets/image/cloth/7.jpg" alt="Product">
+      <div>
+        <p>Men Blazers Sets Elegant Formal</p>
+        <span>$70.0 – $99.50</span>
+      </div>
+    </div>
+
+    <div class="sidebar-product">
+      <img src="assets/image/cloth/1.jpg" alt="Product">
+      <div>
+        <p>Men Shirt Sleeve Polo Contrast</p>
+        <span>$70.0 – $99.50</span>
+      </div>
+    </div>
+
+    <div class="sidebar-product">
+      <img src="assets/image/cloth/3.jpg" alt="Product">
+      <div>
+        <p>Apple Watch Series Space Gray</p>
+        <span>$70.0 – $99.50</span>
+      </div>
+    </div>
+
+    <div class="sidebar-product">
+      <img src="assets/image/cloth/2.jpg" alt="Product">
+      <div>
+        <p>Basketball Crew Socks Long Stuff</p>
+        <span>$70.0 – $99.50</span>
+      </div>
+    </div>
+
+    <div class="sidebar-product">
+      <img src="assets/image/cloth/5.jpg" alt="Product">
+      <div>
+        <p>New Summer Men's Castrol T-Shirts</p>
+        <span>$70.0 – $99.50</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- related products section  -->
+ <div class="related-products">
+  <h3>Related products</h3>
+  <div class="related-grid">
+    <!-- Related Product Item -->
+    <div class="product-card">
+      <img src="assets/image/cloth/6.jpg" alt="Wallet">
+      <div class="related-products-box">
+      <p class="product-title">Xiaomi Redmi 8 Original</p>
+      <p class="product-price">$32.00–$40.00</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/image/8.jpg" alt="Smartwatch">
+      <div class="related-products-box">
+      <p class="product-title">Xiaomi Redmi 8 Original</p>
+      <p class="product-price">$32.00–$40.00</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/image/9.jpg" alt="Headphones">
+      <div class="related-products-box">
+      <p class="product-title">Xiaomi Redmi 8 Original</p>
+      <p class="product-price">$32.00–$40.00</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/image/cloth/4.jpg" alt="Shorts">
+      <div class="related-products-box">
+      <p class="product-title">Xiaomi Redmi 8 Original</p>
+      <p class="product-price">$32.00–$40.00</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/image/10.jpg" alt="Kettle">
+      <div class="related-products-box">
+      <p class="product-title">Xiaomi Redmi 8 Original</p>
+      <p class="product-price">$32.00–$40.00</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/image/interior/7.jpg" alt="Organizer">
+      <div class="related-products-box">
+      <p class="product-title">Xiaomi Redmi 8 Original</p>
+      <p class="product-price">$32.00–$40.00</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="discount-banner">
+  <div class="discount-content">
+    <div class="discount-text">
+      <h4>Super discount on more than 100 USD</h4>
+      <p>Have you ever finally just write dummy info</p>
+    </div>
+    <a href="#" class="discount-btn">Shop now</a>
   </div>
 </div>
 
 
-    </section>
 
 
 
-    <footer>
-        <div class="newsletter-box">
-            <div class="newsletter-text-area">
-                <h4>Subscribe on our newsletter</h4>
-                <p>Get daily news on upcoming offers from many suppliers all over the world</p>
-                <div class="newsletter-form">
-                    <input type="text" placeholder="Mail">
-                    <button>Subscribe</button>
-                </div>
-            </div>
         </div>
+
+
+
+ <!-- footer code starts here -->
+ <footer>
+       
         <!-- code for the second part of footer -->
         <div class="footer-wrapper">
             <div class="footer-container">
                 <div class="footer-content">
                     <div class="footer-brand-section">
                         <div class="footer-logo">
-                            <img src="/ecommerce-project/assets/image/logo-colored.svg" alt="Brand Logo">
+                            <img src="assets/image/logo-colored.svg" alt="Brand Logo">
 
                         </div>
                         <p class="footer-description">
@@ -326,9 +424,9 @@
                         <div class="footer-column">
                             <h4 class="footer-title">Get app</h4>
                             <div class="footer-app-buttons">
-                                <a href="#"><img src="/ecommerce-project/assets/image/apple-removebg-preview.png"
+                                <a href="#"><img src="assets/image/apple-removebg-preview.png"
                                         alt="App Store"></a>
-                                <a href="#"><img src="/ecommerce-project/assets/image/google-removebg-preview.png"
+                                <a href="#"><img src="assets/image/google-removebg-preview.png"
                                         alt="Google Play"></a>
                             </div>
                         </div>
@@ -342,14 +440,14 @@
                 <h4>© 2023 Ecommerce. </h4>
             </div>
             <div class="copyright-language">
-                <img src="/ecommerce-project/assets/image/flags/usa.png" alt="flag">
+                <img src="assets/image/flags/usa.png" alt="flag">
                 <h4>English </h4><i class="ri-arrow-up-s-line"></i>
             </div>
         </div>
     </footer>
 
 
-    <script src="/ecommerce-project/js/page2script.js"></script>
+    <script src="js/page3.js"></script>
 </body>
 
 </html>

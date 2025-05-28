@@ -75,7 +75,7 @@ homeAndOutdoorItems.forEach(item => {
     <div class="content">
       <h4>${item.title}</h4>
       <p>${item.from} <br/> ${item.price}</p>
-      <img src="${item.image}" alt="${item.title}" />
+    <a src="/door">  <img src="${item.image}" alt="${item.title}" /></a>
     </div>
   `;
   homeAndOutdoorDiv.appendChild(homeAndOutdoorBoxes);
